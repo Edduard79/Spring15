@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "d2da3200-7422-4758-9d77-1d9356e2ec90",
+		"name": "Spring Ex15",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26075556"
+	},
+	"item": [
+		{
+			"name": "GetTime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/time",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Legacy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Opera",
+						"type": "text"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Edg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/legacy",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"legacy"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "basic_url",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
